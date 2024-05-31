@@ -1,16 +1,19 @@
 ﻿h1 {
     text-align: center;
-    color: #2a75bb;
-    background-color: #ffcb05;
+    color: black;
     padding: 15px 30px;
     border-radius: 20px;
     font-family: 'Poppins', sans-serif;
+    background-color: salmon;
 }
 
 .pokemon-list {
     list-style-type: none;
     padding: 0;
     margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
     .pokemon-list li {
@@ -19,12 +22,17 @@
         background-color: #fff;
         border-radius: 15px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s ease;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        width: calc(100% / 3 - 40px); /* Adjusts the card size based on container width */
+        margin: 10px;
+        box-sizing: border-box;
     }
 
         .pokemon-list li:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
         }
+
 
         .pokemon-list li a {
             text-decoration: none;
