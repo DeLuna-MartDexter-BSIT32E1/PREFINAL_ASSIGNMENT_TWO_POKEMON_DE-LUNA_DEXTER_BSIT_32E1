@@ -70,13 +70,14 @@
 .pokemon-image {
     text-align: center;
     margin-bottom: 20px;
+    width: 100%;
 }
 
     .pokemon-image img {
-        max-width: 100%;
+        width: 30%; /* Ensure the image takes full width of the container */
+        height: auto; /* Maintain aspect ratio */
         border-radius: 15px;
     }
-
 h2 {
     color: #2a75bb;
     border-bottom: 2px solid #ffcb05;
