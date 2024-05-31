@@ -14,7 +14,7 @@
 
     @{
         int page = ViewData["Page"] != null ? (int)ViewData["Page"] : 1;
-        int pageSize = ViewData["PageSize"] != null ? (int)ViewData["PageSize"] : 20;
+        int pageSize = ViewData["PageSize"] != null ? (int)ViewData["PageSize"] : 10;
         int totalCount = ViewData["TotalCount"] != null ? (int)ViewData["TotalCount"] : 0;
         int totalPages = (int)Math.Ceiling((double)totalCount / pageSize);
     }

@@ -32,7 +32,7 @@ namespace Pokemon_Catcher.Controllers
         }
 
         //Handles the navigation for index.cshtml
-        public async Task<IActionResult> Index(int page = 1, int pageSize = 20)
+        public async Task<IActionResult> Index(int page = 1, int pageSize = 10)
         {
             int offset = (page - 1) * pageSize;
 
